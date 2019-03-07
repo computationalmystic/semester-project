@@ -1,2 +1,2 @@
-# semester-projecgt
+# semester-project
 Semester Project for Software Engineering
