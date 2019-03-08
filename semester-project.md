@@ -111,7 +111,7 @@ Complete the steps below, presenting the information in an organized fashion. Wh
 	- Create use case diagrams and short descriptions 
 	- Ask questions of your stakeholders using the slack channel
 	- Iterate on the use cases; possibly changing some, dropping some and adding some. 
-	- [Follow this template for use cases](./_use-case-template.md)
+	- [Follow this template for use cases](_use-case-template.md)
 1. Your team is responsible for several use cases. Each individual should contribute to three different use cases, through either independent design, design collaboration, or careful peer review of a finished diagram. 
 	- Carefully plan responsibilities for design and peer review so each individual works on three different use cases. 
 	- Your team and your requirements should span 3-5 use cases. More is not better. Go for coherence and sufficiency.  
