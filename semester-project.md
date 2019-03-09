@@ -32,7 +32,10 @@
 		- `sudo pip3 install --upgrade .`
 		- Copy the `augur.config.json` file from [here](./augur.config.json) and make it the one in your main augur directory. 
 	- If you encounter any additional issues open an issue on the repository
-	- At the very end you are going to need that token
+	- At the very end you are going to need that token to the augur.config.json file
+	- To test augur, within your vagrant box at the command line and after following all the readme instructions on the augur project:
+		- `make dev-start`
+		- navigate to http://localhost:3333 in your browser
 
 ## Choose a Project
 *Design Goal Options for each project* : 
