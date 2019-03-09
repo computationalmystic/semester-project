@@ -8,7 +8,7 @@ Your goals are twofold:
 3. [Detailed Instructions are here.](./semester-project.md)
 
 ## Augur Specific Requirements and Design Materials
-1. [Data model for the git database, Facade](./augur/git-minimal.pdf)
+1. [Data model for the git database, Facade](./augur/git_minimal.pdf)
 
 ## RJI Specific Requirements and Design Materials
 
