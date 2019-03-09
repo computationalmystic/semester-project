@@ -28,7 +28,10 @@
 	- Question: Why would I do this if my team is not doing the Augur project? 
 	- Answer: Because follwowing these instructions gets you setup with vagrant and virtualbox, will will help you to manage your development environments. 
 	- Run Augur
-	- If you encounter any issues open an issue on the repository
+	- Two current issues require you to take a few steps after running the `augur` command fails: 
+		- `sudo pip3 install --upgrade .`
+		- Copy the `augur.config.json` file from [here](./augur.config.json) and make it the one in your main augur directory. 
+	- If you encounter any additional issues open an issue on the repository
 	- At the very end you are going to need that token
 
 ## Choose a Project
