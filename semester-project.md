@@ -8,7 +8,7 @@
 	- What is a sufficient design to justify your efforts this semester.
  
 ## Create a Development Environment
-2. Install Anaconda for environment management of python version 3.7 https://www.anaconda.com/distribution/ 
+1. Install Anaconda for environment management of python version 3.7 https://www.anaconda.com/distribution/ 
 	- Question: What if I want to write C code for the Zephyr project? 
 	- Answer: Nearly every software distribution system these days uses python for *something*, and Anaconda is a good environment for managing different python environments on the same computer
 3. Create an anconda environment for testing purposes: 
