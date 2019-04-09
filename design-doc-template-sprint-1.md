@@ -61,13 +61,32 @@
 
 ### User Interface Files
 
+1. first one
+2. second one
+3. etc.
+
 
 ### Model Files (Database Access)
+
+1. first one
+2. second one
+3. etc
 
 
 ### Controller Files (API or other)
 
+1. first one 
+2. second one
+3. etc. 
 
 ## Describe languages you need to use, and any gaps in skills on your team. 
 
+1. first language 
+    - how you will use examples or learn what you need
+2. second language 
+    - how you will use examples or learn what you need
+3. Skill gaps, if any, otherwise specify who is doing what
+    - name
+    - name
+    - skill gap 
 
