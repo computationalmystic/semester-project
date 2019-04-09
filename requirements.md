@@ -30,8 +30,10 @@
   ![test](./images/Requirements.png)
 
 ## Excellent Requirements Specs are [^Source: Video 24 - Characteristics of Excellent Requirements by Enfocus Solutions, https://www.youtube.com/watch?v=6RSkUhZkPJM]:
-1. Complete – nothing missing (hard to tell!)
-2. Consistent – does not conflict with other requirements
-3. Correct – accurately states a user or external needs (customer is the judge)
-4. Feasible – can be implemented within known constraints
-5. Modifiable – can be changed, with history, when necessary (unique identifiers, changelog or source control history)
+
+    1. Complete – nothing missing (hard to tell!)
+    2. Consistent – does not conflict with other requirements
+    3. Correct – accurately states a user or external needs (customer is the judge)
+    4. Feasible – can be implemented within known constraints
+    5. Modifiable – can be changed, with history, when necessary (unique identifiers, changelog or source control history)
+
