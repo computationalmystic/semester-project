@@ -1,5 +1,9 @@
 # Sprint 1 Design Document Template
 
+## Deployment Environment
+
+[Link to your deployment environment](http://seangoggins.ddns.net:3333)
+
 ## Functional Requirements
 
 	1. Use Case Name A
@@ -52,3 +56,18 @@
 
 %% ETC
 ```
+
+## Files that are stubbed out in your repository, with comments about the use cases they are connected to. These sections may not all exist for the Zephyr project teams. Simply explain them as best you can. 
+
+### User Interface Files
+
+
+### Model Files (Database Access)
+
+
+### Controller Files (API or other)
+
+
+## Describe languages you need to use, and any gaps in skills on your team. 
+
+
