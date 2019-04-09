@@ -26,7 +26,8 @@
 
 
 ## Translation of User Requirements to Functional Requirements to Software Spec
-    ![](./images/Requirements.png)
+
+![](./images/Requirements.png)
 
 ## Excellent Requirements Specs are [^Source: Video 24 - Characteristics of Excellent Requirements by Enfocus Solutions, https://www.youtube.com/watch?v=6RSkUhZkPJM]: 
 1. Complete – nothing missing (hard to tell!)
