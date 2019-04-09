@@ -2,21 +2,21 @@
 
 ## Deployment Environment
 
-    - Describe how, with relative ease, your TA's and instructors can run  the programs you have built. If they are deployed on a server, don't worry about that, but they might not be. 
-    - Instructions on environment parameters we need to set and use. Look at Christian's example in slack. 
-    - You may decide not to deploy a database on a server, but please do describe how your system will save data to be loaded on restart. And, if you don't plan to do this, also let us know. 
+- Describe how, with relative ease, your TA's and instructors can run  the programs you have built. If they are deployed on a server, don't worry about that, but they might not be. 
+- Instructions on environment parameters we need to set and use. Look at Christian's example in slack. 
+- You may decide not to deploy a database on a server, but please do describe how your system will save data to be loaded on restart. And, if you don't plan to do this, also let us know. 
 
 ## Functional Requirements
 
-	1. Use Case Name A
-		- Functional Requirement 1
-		- Functional Requirement 2
-		- ... etc.
-	2. Use Case Name B		
-		- Functional Requirement 1
-		- Functional Requirement 2
-		- ... etc.
-	3. ... etc. 
+1. Use Case Name A
+	- Functional Requirement 1
+	- Functional Requirement 2
+	- ... etc.
+2. Use Case Name B		
+	- Functional Requirement 1
+	- Functional Requirement 2
+	- ... etc.
+3. ... etc. 
 
 ## Database Design
 

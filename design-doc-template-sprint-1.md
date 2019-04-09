@@ -6,15 +6,15 @@
 
 ## Functional Requirements
 
-	1. Use Case Name A
-		- Functional Requirement 1
-		- Functional Requirement 2
-		- ... etc.
-	2. Use Case Name B		
-		- Functional Requirement 1
-		- Functional Requirement 2
-		- ... etc.
-	3. ... etc. 
+1. Use Case Name A
+	- Functional Requirement 1
+	- Functional Requirement 2
+	- ... etc.
+2. Use Case Name B		
+	- Functional Requirement 1
+	- Functional Requirement 2
+	- ... etc.
+3. ... etc. 
 
 ## Database Design
 
