@@ -19,7 +19,6 @@
 4. Functional requirements are sufficient but not outstanding. You could provide more detail. 
 1. Really beautiful design!
 2. I assume the upload cap is related to your deployment environment. 
-3. https://github.com/WestonV/RJI-Image-Classifier/wiki/Sprint-1 
 4. Looking forward to seeing ranked images!
 1. Love that you already have the system functional. 
 2. I won't be grading on security, but you might think about wrapping the shell script in an API at some point because, though I have not tried, I'm pretty sure I could hack your server. Well, not me, but a white hat security hacker like Dr. Harrison would probably have access inside of 10 minutes. 
@@ -28,8 +27,9 @@
 
 
 Beautiful Design: 
-http://3.17.206.109
-http://ec2-54-165-106-189.compute-1.amazonaws.com/
+
+- http://3.17.206.109
+- http://ec2-54-165-106-189.compute-1.amazonaws.com/
 
 Functional Rating of pix: 
 http://rji.glike.cf/
