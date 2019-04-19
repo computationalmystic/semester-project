@@ -70,5 +70,6 @@
 		- Which parts of the system in your diagram are causing problems/frustations/pain
 		- How you tried to address those problems
 		- Where you feel you are stuck and what kind help you might need. 
+		- WHen you came to office hours to get help. 
 - c.	a, b, plus a brief status update including a list of what is complete, and what is not complete: A
 
