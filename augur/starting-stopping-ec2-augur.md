@@ -22,7 +22,11 @@
     -   modified:   frontend/public/app.js.map
     -   modified:   frontend/public/vendor.js
     -   modified:   frontend/public/vendor.js.map
-3. If those are the only files modified, then you should do a `git stash`
+3. If those are the only files modified, then you should do a `git stash`. If those are NOT the only files changed: 
+    - make sure you have all your group's changes merged into your github repository. 
+    - then, on your server, do a `git add --all`, followed by: 
+    - `git commit -m "commit message"` and a 
+    - `git push`
 4. Next, `make dev-stop` to stop your instance if you followed the instructions above. 
 5. Then do a `git pull` to get the updates from your github repository. 
 6. If you modified any backend files or routes, or just to be safe, its best to do a `make install-dev`, then
