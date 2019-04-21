@@ -1,4 +1,4 @@
-Augur Frontend
+## Augur Frontend
 
 `Augur.js`
  - 'hub' of Vue creation and linking Vue to the application

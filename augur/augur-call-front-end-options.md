@@ -1,4 +1,5 @@
 ## Calling the front end
+
 `You have two options for where to call your endpoint on the frontend:`
 - in your card file
 - in your chart file
