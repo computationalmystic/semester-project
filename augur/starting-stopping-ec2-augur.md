@@ -9,6 +9,12 @@
 6. Started augur with `nohup make dev-start &`, which runs it in the background and survives terminal session close
 7. You can stop augur then with a regular `make dev-stop`
 
+# From your AWS Console, make sure you open ports 3333 and 5000
+
+![Select your instance](./images/ec2-1.png)
+
+![Add the ports, and make them open to the world](./images/ec2-2.png)
+
 # To connect and work with augur: 
 1. `source augur/bin/activate`
 2. cd augur-se, or whatever your directory for augur is.
