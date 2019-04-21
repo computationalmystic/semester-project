@@ -10,5 +10,9 @@
 6. If anyone ever does a `make install-dev` as `sudo make install-dev` then you will have to issue the following command against that directory: `sudo chown -R ubuntu (or ec2-user) augur.egg.info`, for example.  That is the most common.  You can tell if this happened by doing an `ls -l` on your directory at the root of augur and see if any of the directories are owned by root. 
 
 
+# Do you have ghost images of augur running? 
 
+1. First `ps -ef | grep augur`will tell you
+2. try `make dev-stop` from $AUGUR_HOME
+3. 
 

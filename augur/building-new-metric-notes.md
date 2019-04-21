@@ -89,7 +89,5 @@
 
       // THIS IS THE NEW METRIC IN OUR EXAMPLE
       Timeseries(repo, 'codeReviewIteration', 'code_review_iteration')
-
 ```
 5. 
-
