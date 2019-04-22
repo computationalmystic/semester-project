@@ -55,21 +55,21 @@
 
 ## 30% of your grade in the second sprint:
 - 1 project specific backlog item complete:     B
-- All project specific backlog items complete :   A 
+- All project specific backlog items complete [SPECIAL NOTE] :   A 
 
 ## 40% of your grade in the second sprint:
 - a. All Design decisions documented, page mock-up included:     B
-- b. a, plus All general Design Items Fully Completed:   A– 
+- b. a, plus All general Design Items Fully Completed: [SPECIAL NOTE]  A– 
 - c. a, b, plus ensuring your submission is easily navigated on GitHub using Markdown or the GitHub Wiki. We should not need to click around. It should all be "at the link you submit." :   A 
 
 ## 30% of your grade in the second sprint:
 - a.	Every function attempted 	B
-- b.	a, plus at least 1 full use case functions end to end: 	A-
-	- If you run into overwhelming technical issues that keep you from reaching a full end to end use case, provide a clear description (with some technical detail) about 
+- b.	a, plus at least 1 full use case functions end to end: [SPECIAL NOTE] A- 
+- c.	a, b, plus a brief status update including a list of what is complete, and what is not complete: A
+
+(SPECIAL NOTE:) - If you run into overwhelming technical issues that keep you from reaching a full end to end use case, provide a clear description (with some technical detail) about 
 		- What you did
 		- Which parts of the system in your diagram are causing problems/frustations/pain
 		- How you tried to address those problems
 		- Where you feel you are stuck and what kind help you might need. 
 		- WHen you came to office hours to get help. 
-- c.	a, b, plus a brief status update including a list of what is complete, and what is not complete: A
-
