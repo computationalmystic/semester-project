@@ -73,9 +73,10 @@
 3. example file 3: 'augurAPI.js' in the `augur/frontend/app/` directory needs to have the the metric from `routes.py` mapped to an API endpoint that the frontend will then access. 
    - Metrics from the facade.py that take a git url should go under the //GIT section in this file
    - Most of your metrics are going to belong in the //GROWTH, MATURITY AND DECLINE section. 
-
 ```javascript
+
     // IN THIS SECTION of augurAPI.js DEVELOPER NOTE
+
     if (repo.owner && repo.name) {
       // DIVERSITY AND INCLUSION
       // GROWTH, MATURITY, AND DECLINE
@@ -88,14 +89,17 @@
 
       // THIS IS THE NEW METRIC IN OUR EXAMPLE
       Timeseries(repo, 'codeReviewIteration', 'code_review_iteration')
+    }
+
 ```
 
 4. Example file 4: `ExperimentalCard.vue` in the `augur/frontend/app/components/` directory. We will need to import and insert a chart component that we will be creating next or a chart component that already exists in the `augur/frontend/app/components/charts/ ` directory.
 
    In the `<script>` section of `ExperimentalCard.vue`, we must import the chart file and add it to the `components` section under `module.exports` like this: 
 
-   ```javascript
-   <script>
+```javascript
+
+//<script> -- commented out here because its not javascript markdown recognized. 
    
    import ExampleChart from `./charts/ExampleChart`
    
@@ -120,24 +124,28 @@
      }
    }
    
-   </script>
-   ```
+//</script> -- commented out here because its not javascript markdown recognized. 
+
+```
 
    
+**TODO** Can we keep the example from above in place? 
 
-   We insert the `ExampleChart` component with our endpoint name (`closedIssues`) defined as the `source` property (prop) of the component (Vue converts a string name like 'ExampleChart' to 'example-chart' to be used as an html tag):
+5. Example file 4: **TODO** <<FILL IN FILE NAME and PATH>> We insert the `ExampleChart` component with our endpoint name (`closedIssues`) defined as the `source` property (prop) of the component (Vue converts a string name like 'ExampleChart' to 'example-chart' to be used as an html tag):
 
-   ```javascript
+```html
    <example-chart source="closedIssues"
                        title="Closed Issues / Week "
                        cite-url=""
                        cite-text="Closed Issues">
    </example-chart>
-   ```
+```
 
-5. You will need to create a chart file. Here is an example of a chart file that calls the endpoint that is passed as the `source` property. The template section holds the vega-lite tag that renders the chart. The Vega-lite `spec` is being bound to what is being returned by the `spec()` method inside the `computed` properties (`:spec="spec"`), and the `data` being used for the chart is bound to the `values` array being returned by the `data()` method (`:data="values"`):
+5. You will need to create a chart file. **TODO** << Where? What will it be called? What example are we using? >> Here is an example of a chart file that calls the endpoint that is passed as the `source` property. The template section holds the vega-lite tag that renders the chart. The Vega-lite `spec` is being bound to what is being returned by the `spec()` method inside the `computed` properties (`:spec="spec"`), and the `data` being used for the chart is bound to the `values` array being returned by the `data()` method (`:data="values"`):
 
-   ```
+**TODO** Where it goes in this file. Same file? 
+
+```html 
    <template>
      <div ref="holder" style="position: relative; z-index: 5">
        <div class="chart">
@@ -147,9 +155,11 @@
        </div>
      </div>
    </template>
-   
-   
-   <script>
+```
+**TODO** Where it goes in this file. Same file? 
+
+```javascript     
+   // <script> -- commented out here because its not javascript markdown recognized. 
    import { mapState } from 'vuex'
    import AugurStats from 'AugurStats'
    
@@ -201,5 +211,5 @@
        //you can call them anywhere with: this.methodName()
      }
    }
-   </script>
-   ```
+   // </script> -- commented out here because its not javascript markdown recognized. 
+```
