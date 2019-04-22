@@ -1,10 +1,9 @@
-
 1. augur/augur/datasources/<directory for data source>
-	1. example: ghtorrent
-	2. example file 1: ghtorrent.py
-		- create a new function that has the sql query to the database, or API call to GitHub or whatever. But if you're in `ghtorrent.py` (or `facade.py`), its a sql query. Here's an example breakdown: 
-            - `@annotate(tag='code-review-iteration') makes the function visible in metrics-status
-            - `def code_review_iteration..` is the name of the function called in `routes.py` **in the same data source folder** (which is `augur/augur/datasources/ghtorrent` in our example)
+   1. example: ghtorrent
+   2. example file 1: ghtorrent.py
+      - create a new function that has the sql query to the database, or API call to GitHub or whatever. But if you're in `ghtorrent.py` (or `facade.py`), its a sql query. Here's an example breakdown: 
+        - `@annotate(tag='code-review-iteration') makes the function visible in metrics-status`
+             - `def code_review_iteration..` is the name of the function called in `routes.py` **in the same data source folder** (which is `augur/augur/datasources/ghtorrent` in our example
 
 ```python 
 @annotate(tag='code-review-iteration')
@@ -42,9 +41,8 @@
         return pd.DataFrame({'date': df['created_at'], 'iterations': df['iterations']})
 ```
 
-
-3. example file 2: `routes.py` in the same directory, `augur/augur/datasources/ghtorrent/`
-    - `server.addTimeseries` (most of the below is annotation. The very last line is what makes it actually work.);;;;
+2. example file 2: `routes.py` in the same directory, `augur/augur/datasources/ghtorrent/`
+   - `server.addTimeseries` (most of the below is annotation. The very last line is what makes it actually work.);;;;
 
 ```python
     """
@@ -72,9 +70,10 @@
 
 ```
 
-4. example file 3: 'augurAPI.js' in the `augur/frontend/app/` directory needs to have the the metric from `routes.py` mapped to an API endpoint that the frontend will then access. 
-    - Metrics from the facade.py that take a git url should go under the //GIT section in this file
-    - Most of your metrics are going to belong in the //GROWTH, MATURITY AND DECLINE section. 
+3. example file 3: 'augurAPI.js' in the `augur/frontend/app/` directory needs to have the the metric from `routes.py` mapped to an API endpoint that the frontend will then access. 
+   - Metrics from the facade.py that take a git url should go under the //GIT section in this file
+   - Most of your metrics are going to belong in the //GROWTH, MATURITY AND DECLINE section. 
+
 ```javascript
     // IN THIS SECTION of augurAPI.js DEVELOPER NOTE
     if (repo.owner && repo.name) {
@@ -90,4 +89,117 @@
       // THIS IS THE NEW METRIC IN OUR EXAMPLE
       Timeseries(repo, 'codeReviewIteration', 'code_review_iteration')
 ```
-5. 
+
+4. Example file 4: `ExperimentalCard.vue` in the `augur/frontend/app/components/` directory. We will need to import and insert a chart component that we will be creating next or a chart component that already exists in the `augur/frontend/app/components/charts/ ` directory.
+
+   In the `<script>` section of `ExperimentalCard.vue`, we must import the chart file and add it to the `components` section under `module.exports` like this: 
+
+   ```javascript
+   <script>
+   
+   import ExampleChart from `./charts/ExampleChart`
+   
+   import DynamicLineChart from './charts/DynamicLineChart'
+   import BubbleChart from './charts/BubbleChart'
+   import StackedBarChart from './charts/StackedBarChart'
+   import DualAxisContributions from './charts/DualAxisContributions'
+   
+   module.exports = {
+     data() {
+       return {
+         colors: ["#FF3647", "#4736FF","#3cb44b","#ffe119","#f58231","#911eb4","#42d4f4","#f032e6"]
+       }
+     },
+     components: {
+       ExampleChart,
+       
+       DynamicLineChart,
+       BubbleChart,
+       StackedBarChart,
+       DualAxisContributions
+     }
+   }
+   
+   </script>
+   ```
+
+   
+
+   We insert the `ExampleChart` component with our endpoint name (`closedIssues`) defined as the `source` property (prop) of the component (Vue converts a string name like 'ExampleChart' to 'example-chart' to be used as an html tag):
+
+   ```javascript
+   <example-chart source="closedIssues"
+                       title="Closed Issues / Week "
+                       cite-url=""
+                       cite-text="Closed Issues">
+   </example-chart>
+   ```
+
+5. You will need to create a chart file. Here is an example of a chart file that calls the endpoint that is passed as the `source` property. The template section holds the vega-lite tag that renders the chart. The Vega-lite `spec` is being bound to what is being returned by the `spec()` method inside the `computed` properties (`:spec="spec"`), and the `data` being used for the chart is bound to the `values` array being returned by the `data()` method (`:data="values"`):
+
+   ```
+   <template>
+     <div ref="holder" style="position: relative; z-index: 5">
+       <div class="chart">
+         <h3 style="text-align: center">{{ title }}</h3>
+         <vega-lite :spec="spec" :data="values"></vega-lite>
+         <p> {{ chart }} </p>
+       </div>
+     </div>
+   </template>
+   
+   
+   <script>
+   import { mapState } from 'vuex'
+   import AugurStats from 'AugurStats'
+   
+   export default {
+     props: ['source', 'citeUrl', 'citeText', 'title', 'disableRollingAverage', 'alwaysByDate', 'data'],
+     data() {
+       return {
+         values: [],
+       }
+     },
+     computed: {
+       repo() {
+         return this.$store.state.baseRepo
+       },
+       spec() {
+           // IF YOU WANT TO CALL YOUR ENDPOINT IN THE CHART FILE, THIS IS WHERE/HOW YOU SHOULD DO IT:
+         let repo = window.AugurAPI.Repo({ githubURL: this.repo })
+         repo[this.source]().then((data) => {
+         	// you can print your data in a console.log() to make 					// sure the endpoint is returning what it needs to
+           // console.log("HERE", data)
+           this.values = data
+         })
+         //FINISH CALLING ENDPOINT
+         
+         // THIS IS A SAMPLE 'spec', SPECS ARE WHAT CREATE THE VEGA-LITE FILE, 
+         // YOU CAN PLAY WITH SAMPLE SPEC OF A LINE CHART AT: 
+         // https://vega.github.io/editor/#/examples/vega-lite/line
+         // AND SEE THE DATA THAT THEY ARE USING AT:
+         // https://vega.github.io/vega-lite/data/stocks.csv
+         let config = {
+           "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+           "width": 950,
+           "height": 300,
+           "mark": "line",
+           "encoding": {
+             "x": {
+               "field": "date", "type": "temporal",
+             },
+             "y": {
+               "field": "value","type": "quantitative",
+             },
+           }
+         }
+         return config
+       }
+     },
+     methods: {
+       //define any methods you may need here
+       //you can call them anywhere with: this.methodName()
+     }
+   }
+   </script>
+   ```
