@@ -1,0 +1,3 @@
+# These are some notes from Ed McCain you may find useful as you go through the final sprints. 
+1. [What to do with too many images](https://www.rjionline.org/stories/what-to-do-with-too-many-images)
+2. [How the New York Times is using Google Cloud](https://cloud.google.com/blog/products/ai-machine-learninghow-the-new-york-times-is-using-google-cloud-to-find-untold-stories-in-millions-of-archived-photos)
