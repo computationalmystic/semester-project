@@ -38,33 +38,62 @@ http://rji.glike.cf/
 ## Check out Everyone's Sprint 1 to get ideas
 
 https://github.com/computationalmystic/augur-group29/wiki/Design-Document
+
 https://github.com/computationalmystic/augur-group26
+
 https://github.com/mRockey23/augur-group25/wiki
+
 https://github.com/computationalmystic/RJI-group24/blob/master/Sprint%201%20Design%20Document%20Template.docx
+
 https://github.com/computationalmystic/RJI-group23/wiki/Sprint-One
+
 https://github.com/mlevin23/Zephyr22
+
 https://github.com/EricNMitchell/augur-group21/blob/master/sprint1.md
+
 https://github.com/pskggc/Group-20-Software-Engineering
+
 https://github.com/BrianHillis/augur
+
 https://github.com/mmhxv3/4320Group18/blob/master/Sprint1/design_doc.md
+
 https://github.com/WestonV/RJI-Image-Classifier
+
 https://github.com/computationalmystic/augur-group16
+
 https://github.com/mas2g2/RJI-CS4320-Project/wiki/Sprint-1-Wiki
+
 https://github.com/TheForgottenTime/RJI-group14
+
 https://github.com/computationalmystic/augur-group13/tree/master/sprint1
+
 https://github.com/computationalmystic/Zephyr-group12/blob/master/Sprint%201/Sprint%201%20design%20document.md
+
 https://github.com/AlDavis612/Group11SoftwareProject
+
 https://github.com/computationalmystic/augur-group10
+
 https://github.com/dosterz97/zephyr/blob/master/README.md
+
 https://github.com/computationalmystic/augur-group7/wiki/Sprint-1-Design-Document
+
 https://github.com/gabe-heim/augur-se
+
 https://github.com/computationalmystic/augur-group5/wiki
+
 https://github.com/MJC598/RJI-Software-Engineering-Project/wiki
+
 https://github.com/segFaultCity/ZephyrGroup3/wiki
+
 https://github.com/computationalmystic/Zephyr-group2/
+
 https://github.com/bradywebb8/Group27-RJI
+
 https://github.com/michaelwoodruffdev/augur/blob/master/documentation/sprint1/design-doc.md
+
 https://github.com/computationalmystic/RJI-group1/blob/master/Sprint%201.md
+
+
 
 
 
