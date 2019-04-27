@@ -24,7 +24,7 @@ Describe the bug:
 
 To Reproduce:
 
-**Steps to reproduce the behavior:
+**Steps to reproduce the behavior:** 
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
@@ -53,7 +53,9 @@ Add any other context about the problem here.
 
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-**Describe the solution you'd like:**A clear and concise description of what you want to happen.**
+**Describe the solution you'd like:**
+
+A clear and concise description of what you want to happen.**
 
 Describe alternatives you've considered:
 
