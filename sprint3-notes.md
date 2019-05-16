@@ -40,17 +40,21 @@ First of all, the progress all of the teams have made is outstanding. Across the
     - You need deployment instructions for a developer. Not just a link to the site. 
     - Site: http://ec2-52-23-195-32.compute-1.amazonaws.com/
     - Does upload some smaller pix, but does not show a rating
+    - A few really good issue reports and some weaker ones. 
 1. RJI Group 20: Issue: This issue is ok, but issues all need more activity: https://github.com/pskggc/Group-20-Software-Engineering/issues/6
     - Site seems down
     - The instructions are quite thorough for an end user!  Good job... but developers need instructions on how to install and run the various parts of your system!
+    - Issues are 
 1. RJI Group 23: Issue: https://github.com/computationalmystic/RJI-group23/issues/12
     - Site seems down. Cannot find a link 
     - Read me could use a little more elaboration. 
     - The development installation instructions are pretty light. Look at Augur's. You don't have that much to describe, but you need to make it more clear what a person will do to install your system. 
+    - Lots of use of issues.  A little sparse, but its clear you are actively tracking your work more than most teams. ELABORATE so a developer not on your team will know a little more about what's needed. 
 1. RJI Group 24: Issue: https://github.com/computationalmystic/RJI-group24/issues/7
     - Site: http://ec2-18-222-50-172.us-east-2.compute.amazonaws.com/SoftwareDev/login.php
     - Is your classification connected yet in deployment? 
     - Your developer instructions need to be more than a link to how to use the site. They are for another developer to install. 
+    - Sparse use of issues and comments and most of them are not clearly elaborated. 
 1. RJI Group 27 Issue: https://github.com/bradywebb8/Group27-RJI/issues/1
     - Not much discussion on issues, and they could be more clear
     - Developer instructions need to be a little more complete. 
